@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AudioRecorderButton</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="STATE_NORMAL">按住  说话</string>
+    <string name="STATE_RECORDING">松开  结束</string>
+	<string name="STATE_WANT_TO_CANCEL">松开手指，取消发送</string>
+</resources>
