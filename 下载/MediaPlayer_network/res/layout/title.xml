@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titleLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#4dd0c8"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:layout_height="40dp"
+       	android:layout_width="fill_parent"
+       	android:textSize="20dp"
+        android:gravity="center"
+        android:text="Network Music" />
+
+</LinearLayout>
