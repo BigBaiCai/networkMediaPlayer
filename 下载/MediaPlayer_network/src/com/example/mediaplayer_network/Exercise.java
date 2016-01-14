@@ -1,12 +1,17 @@
 package com.example.mediaplayer_network;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-public class Exercise extends FragmentActivity{
+
+public class Exercise extends Fragment{
 	@Override
-	protected void onCreate(Bundle arg0) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		super.onCreate(arg0);
+		return inflater.inflate(R.layout.tab_exercise, null);
 	}
 }

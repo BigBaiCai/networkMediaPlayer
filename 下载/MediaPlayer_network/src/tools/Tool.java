@@ -5,9 +5,10 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 public class Tool {
+	private static ConnectivityManager connectivityManager;
 	public static boolean isNetworkAvailable(Context context){
 		//ConnectivityManager主要管理和网络连接相关的操作 ,记得注册权限
-		ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);//获取系统的连接服务  
+		connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);//获取系统的连接服务  
 		if(connectivityManager==null){
 			return false;//表示没有网络
 		}else{

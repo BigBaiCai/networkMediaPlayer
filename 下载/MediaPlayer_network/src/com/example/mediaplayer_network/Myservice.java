@@ -43,7 +43,7 @@ public class Myservice extends Service implements
 		// getStringExtra（）检索数据
 		String songName = intent.getStringExtra("songName");
 		Intent openIntent = new Intent(getApplicationContext(),
-				NetWorkAudioPlayer.class);
+				MainActivity.class);
 		
 		// FLAG_ACTIVITY_CLEAR_TOP:上一个被打开的活动会被终结掉，实现没有两个相同的活动被同时打开。
 		openIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -70,12 +70,12 @@ public class Myservice extends Service implements
 		notification.tickerText = "This is the tickerText.";// 设置显示在状态栏的文字
 		notification.icon = R.drawable.ic_launcher;// 设置图标
 		notification.when = System.currentTimeMillis();// 设置发送时间
-		notification.defaults = Notification.DEFAULT_ALL;// 设置默认声音，默认振动，默认闪光灯，记得注册事件
+		//notification.defaults = Notification.DEFAULT_ALL;// 设置默认声音，默认振动，默认闪光灯，记得注册事件
 		/*
 		 * 设置flag位 FLAG_AUTO_CANCEL 打开应用程序后自动清除掉 FLAG_NO_CLEAR 该通知不会自动清除掉
 		 * FLAG_ONGOING_EVENT 通知放置在正在运行 FLAG_INSISTENT 是否一直进行，比如音乐一直播放，直到用户响应
 		 */
-		notification.flags = Notification.FLAG_ONGOING_EVENT;
+		notification.flags = Notification.FLAG_AUTO_CANCEL;
 		/*
 		 * 参数 1: The context for your application / activity. 2： The title that
 		 * goes in the expanded entry. 3： The text that goes in the expanded

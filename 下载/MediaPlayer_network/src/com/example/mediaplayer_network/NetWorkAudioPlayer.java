@@ -26,6 +26,7 @@ public class NetWorkAudioPlayer extends MediaPlayer implements IAudioPlayer {
 		strs[0]=urlString1;
 		strs[1]=urlString2;
 		strs[2]=urlString3;
+		
 		//Ëæ»ú»ñÈ¡
 		return strs[new Random().nextInt(3)];
 	}
@@ -63,6 +64,7 @@ public class NetWorkAudioPlayer extends MediaPlayer implements IAudioPlayer {
 		// TODO Auto-generated method stub
 		if(Tool.isNetworkAvailable(context)){
 			playPrepared();
+			
 		}
 		
 	}
